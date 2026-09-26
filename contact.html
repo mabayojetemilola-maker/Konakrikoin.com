@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Konakrikoin Gas & Oil Limited</title>
+  <meta name="description" content="Contact Konakrikoin Gas & Oil Limited: 38 Idoro Road, Uyo. Call 0806 516 1684. Ibaka project at Enwang Road, Mbo LGA.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="navin">
+    <a class="brand" href="index.html">
+      <img src="logo.jpg" alt="Konakrikoin Gas & Oil Limited logo">
+      <div>
+        <strong>KONAKRIKOIN</strong>
+        <span>GAS &amp; OIL LTD</span>
+      </div>
+    </a>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="locations.html">Locations</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a class="nav-cta" href="tel:+2348065161684">Call Us</a>
+    </nav>
+    <button class="hamburger" id="menuBtn" type="button" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="locations.html">Locations</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="tel:+2348065161684">Call 0806 516 1684</a>
+  </div>
+</header>
+
+<div class="page-hero">
+  <h1>Contact Us</h1>
+  <p>Product enquiries · Station information · Partnerships</p>
+</div>
+
+<section class="contact" style="padding:56px 18px;">
+  <div class="wrap contactGrid">
+    <div>
+      <h2 style="font-size:1.7rem; margin-bottom:12px;">Let’s work together</h2>
+      <p style="margin-bottom:18px;">For product enquiries, station information, bulk supply, partnerships or any other business opportunity, contact Konakrikoin Gas &amp; Oil Limited today.</p>
+      <p style="margin-bottom:8px;"><strong style="color:#fff;">Safe · Reliable · Efficient</strong></p>
+      <p>Quality products · Professional service · Sustainable energy solutions</p>
+      <div class="actions" style="margin-top:22px;">
+        <a class="btn" href="tel:+2348065161684" style="background:#fff;color:var(--deep);">Call 0806 516 1684</a>
+        <a class="btn outline-light" href="https://www.google.com/maps/search/?api=1&query=38%20Idoro%20Road%2C%20Uyo%2C%20Akwa%20Ibom%2C%20Nigeria" target="_blank" rel="noopener">Get Directions</a>
+      </div>
+    </div>
+    <div class="contactCard">
+      <p><strong>Uyo Station</strong><br>38 Idoro Road, Uyo 520101, Akwa Ibom State</p>
+      <p><strong>Phone</strong><br><a href="tel:+2348065161684">+234 806 516 1684</a></p>
+      <p><strong>Ibaka Project</strong><br>Enwang Road, Ibaka, Mbo LGA, Akwa Ibom State</p>
+      <p style="margin-bottom:0;"><strong>Company</strong><br>Konakrikoin Gas &amp; Oil Limited</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Konakrikoin Gas &amp; Oil Limited. All rights reserved. · Energy Today, A Better Tomorrow
+</footer>
+
+<a class="call-float" href="tel:+2348065161684" aria-label="Call Konakrikoin">📞</a>
+<script>
+(function(){
+  function init(){
+    var btn = document.getElementById("menuBtn");
+    var menu = document.getElementById("mobileMenu");
+    if(!btn || !menu) return;
+    btn.addEventListener("click", function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      btn.classList.toggle("open");
+      menu.classList.toggle("open");
+    });
+    menu.querySelectorAll("a").forEach(function(a){
+      a.addEventListener("click", function(){
+        btn.classList.remove("open");
+        menu.classList.remove("open");
+      });
+    });
+  }
+  if(document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
+  else init();
+})();
+</script>
+</body>
+</html>

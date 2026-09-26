@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locations — Konakrikoin Gas & Oil Limited</title>
+  <meta name="description" content="Konakrikoin locations: Uyo station at 38 Idoro Road and new Ibaka station under development at Enwang Road, Mbo LGA.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="navin">
+    <a class="brand" href="index.html">
+      <img src="logo.jpg" alt="Konakrikoin Gas & Oil Limited logo">
+      <div>
+        <strong>KONAKRIKOIN</strong>
+        <span>GAS &amp; OIL LTD</span>
+      </div>
+    </a>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="locations.html" class="active">Locations</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-cta" href="tel:+2348065161684">Call Us</a>
+    </nav>
+    <button class="hamburger" id="menuBtn" type="button" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="locations.html">Locations</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="tel:+2348065161684">Call 0806 516 1684</a>
+  </div>
+</header>
+
+<div class="page-hero">
+  <h1>Our Locations</h1>
+  <p>Uyo station · Ibaka project (coming soon)</p>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="locGrid">
+      <article class="loc">
+        <span class="status">CURRENT STATION</span>
+        <h3>Uyo Station</h3>
+        <p><strong>38 Idoro Road, Uyo, Akwa Ibom State, Nigeria.</strong></p>
+        <p>Our main station serving retail and commercial customers with petroleum products, cooking gas and related services. Conveniently located for easy access across Uyo.</p>
+        <div class="locBtns">
+          <a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=38%20Idoro%20Road%2C%20Uyo%2C%20Akwa%20Ibom%2C%20Nigeria" target="_blank" rel="noopener">Get Directions</a>
+          <a class="btn secondary" href="tel:+2348065161684">Call Station</a>
+        </div>
+      </article>
+      <article class="loc">
+        <span class="status coming">COMING SOON</span>
+        <h3>Ibaka Station</h3>
+        <p><strong>Enwang Road, Ibaka, Mbo LGA, Akwa Ibom State, Nigeria.</strong></p>
+        <p>A new fuel station under construction to expand our presence and serve communities in Mbo LGA and the surrounding coastal area. Map pin will be updated once final coordinates are confirmed.</p>
+        <div class="locBtns">
+          <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=Enwang%20Road%2C%20Ibaka%2C%20Mbo%20LGA%2C%20Akwa%20Ibom%2C%20Nigeria" target="_blank" rel="noopener">View Area</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="sectionHead">
+      <h2>Uyo Location Map</h2>
+      <p>Map centred on 38 Idoro Road, Uyo. For the exact station pin, link your Google Business Profile once the profile URL is available.</p>
+    </div>
+    <div class="mapWrap">
+      <iframe title="Google map for 38 Idoro Road, Uyo" loading="lazy" src="https://www.google.com/maps?q=38%20Idoro%20Road%2C%20Uyo%2C%20Akwa%20Ibom%2C%20Nigeria&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Konakrikoin Gas &amp; Oil Limited. All rights reserved. · Energy Today, A Better Tomorrow
+</footer>
+
+<a class="call-float" href="tel:+2348065161684" aria-label="Call Konakrikoin">📞</a>
+<script>
+(function(){
+  function init(){
+    var btn = document.getElementById("menuBtn");
+    var menu = document.getElementById("mobileMenu");
+    if(!btn || !menu) return;
+    btn.addEventListener("click", function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      btn.classList.toggle("open");
+      menu.classList.toggle("open");
+    });
+    menu.querySelectorAll("a").forEach(function(a){
+      a.addEventListener("click", function(){
+        btn.classList.remove("open");
+        menu.classList.remove("open");
+      });
+    });
+  }
+  if(document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
+  else init();
+})();
+</script>
+</body>
+</html>
